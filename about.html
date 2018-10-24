@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>About NS</title>
+		<style type="text/css">
+			body
+			{
+				background-color: antiquewhite;
+			}
+			p
+			{
+				text-align: justify;
+			}
+			div.left
+			{
+				float: left;
+				width: 50%;				
+			}
+			div.right
+			{
+				float: right;
+				width: 50%;
+				padding-top: 1%;
+			}
+			img
+			{
+				width: 80%;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="left">
+		<h2>WHO WE ARE</h2>
+		<p>
+			Sri lankan owned and operated company specializing in the sale of popular brand name mobile phones,accessories,games, and movies<br>
+			Based in  Kadawatha, NS communication &amp; cellular center is taking ecommerce sales and support to another level, incorporating everything you need as a customer to make the right decisions when purchasing.
+		</p>
+		<p>
+			The wide range of products allows ns communication to provide a one-stop solution for all mobile phones &amp; communication products and peripherals.
+		</p>
+		<p>
+			All of our products are sourced from reputable vendors including Samsung, Huawei,Oppo and many others.
+
+		</p>
+		<p>
+			NS communication stocks and distributes a wide range of networking equipment, mobile phones, accessories, games and movies.
+		</p>
+		<p>
+			With over 200000 products currently in our database (and with our product range literally growing and updated everyday), we are able to reduces the time you spend searching for products around the internet helping to save your time and money.
+		</p>
+		<p>
+		
+			There are some other services available in NS communication, like get photo copies, print outs. You will get quality photo copies and print outs in here.
+		</p>
+		<p>
+			It really has never been this simple to buy quality, brand name mobile phones, accessories and some other products.
+		</p>
+		<p>
+			We’re excited, and we think you will be too.<br>
+			Why NS communication?
+		</p>
+		<p>
+			You will be pleasantly surprised with the entire NS communication packages. We redefine all of your shopping with a massive, varied product range, secure purchasing and great customer service – because you are important to us. Backed by over ten years experience – If you are new to shopping with us you are in good hands. If you are a veteran let us show you how it should be done. What are you waiting for, try the NS communication difference today.
+		</p>	
+		</div>
+		<div class="right">
+			<p style="padding-left: 20%;">
+				<img class="mySlides" src="images/ns/1.jpeg" alt="NS">
+				<img class="mySlides" src="images/ns/2.jpeg" alt="NS">
+				<img class="mySlides" src="images/ns/3.jpeg" alt="NS">
+				<img class="mySlides" src="images/ns/4.jpeg" alt="NS">
+				<img class="mySlides" src="images/ns/5.jpeg" alt="NS">
+				<img class="mySlides" src="images/ns/6.jpeg" alt="NS">
+			</p>			
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() 
+			{
+    			var i;
+    			var x = document.getElementsByClassName("mySlides");
+    			for (i = 0; i < x.length; i++) 
+				{
+       				x[i].style.display = "none";  
+    			}
+    			myIndex++;
+    			if (myIndex > x.length) 
+					{myIndex = 1}    
+    			x[myIndex-1].style.display = "block";  
+    			setTimeout(carousel, 2000);
+			}
+		</script>		
+	</body>
+</html>

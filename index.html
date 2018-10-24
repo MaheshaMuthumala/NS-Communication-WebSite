@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<title>NS</title>
+		<style type="text/css">
+			body
+			{
+				padding: 0% 10%;
+				background-color: beige;
+			}
+			div.head
+        	{				
+				width: 100%;	
+				height: 20%;
+				background-color: #793C3D;
+				margin: none;
+        	}
+			div.body
+			{
+				width: 100%;
+				height: 70%;
+				overflow: hidden;
+				background-color: whitesmoke;
+				padding: 0px 0;
+				margin: 0px;
+			}
+			div.footer
+			{
+				width: 100%;	
+				height: 20%;
+				background-color: #793C3D;
+				margin-top: -1%;
+				padding: 1px;
+			}
+			iframe
+			{
+				width: 100%;
+				margin-top: -1%;
+    			padding: none;
+				border: none;
+				height: 1200px;
+			}
+			div.left
+			{
+				float: left;
+				width: 10%;
+				height: 20%;
+			}
+			div.right
+			{
+				float: right;
+				width: 15%;
+				height: 20%;
+				padding: 2%;
+				
+			}
+			img.logo
+			{			
+				width: 100%;
+				padding-top: 20%;
+			}
+			img.tele
+			{
+				width: 20%;	
+				float: left;
+			}
+			h1
+			{
+				text-align: center;
+				padding-top: 1%;
+				color: lightblue;
+			}
+			p
+			{
+				text-align: center;	
+				font-weight: bold;
+				color: white;
+			}
+			ul 
+			{
+    			list-style-type: none;
+    			margin: 0;
+    			padding: 0;
+   				overflow: hidden;
+    			background-color: #333;
+			}
+
+			li 
+			{
+    			float: left;
+				border-right: 1px solid #bbb;			
+			}
+
+			li a 
+			{
+    			display: block;
+    			color: white;
+    			text-align: center;
+    			padding: 14px 16px;
+    			text-decoration: none;
+			}			
+			li a:hover:not(.active) 
+			{
+    			background-color: #111;
+			}
+			a
+			{
+				text-decoration: none;
+				color: white;
+				font-weight: bold;
+			}
+			
+		</style>		
+	</head>
+	
+    <body>
+		<div class="head">
+			<div class="left">
+				<img class="logo" src="images/logo.png" alt="NS logo">
+			</div>
+			<div class="right">
+				<p>
+					<img class="tele" src="images/telephone.jpg" alt="Telephone"> 
+					Call Us<br>
+					+94 755 848 347
+				</p>
+			</div>	
+			<h1>NS COMMUNICATION <br>&amp;<br>CELLULAR CENTRE</h1>
+			<div>
+				<nav>
+					<ul>
+						<li><a href="home.html" target="showframe">Home</a></li>
+						<li><a href="contact.html" target="showframe">Contact Us</a></li>
+						<li style="float: right;border-left: 1px solid #bbb"><a href="about.html" target="showframe">About Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+        <div class="body">
+			<iframe name="showframe" id="showframe" src="home.html" marginwidth="none" frameborder="0" scrolling="no"></iframe>
+			
+			<!--For resize iframe automatically(not work on google chrome)-->
+			<script type="text/javascript">
+				function getDocHeight(doc) 
+				{
+    				doc = doc || document;    
+    				var body = doc.body, html = doc.documentElement;
+    				var height = Math.max( body.scrollHeight, body.offsetHeight, 
+        			html.clientHeight, html.scrollHeight, html.offsetHeight );
+    				return height;
+				}
+
+				function setIframeHeight(id) 
+				{
+					var ifrm = document.getElementById(id);
+    				var doc = ifrm.contentDocument? ifrm.contentDocument: 
+        			ifrm.contentWindow.document;
+    				ifrm.style.visibility = 'hidden';
+    				ifrm.style.height = "10px";
+    				ifrm.style.height = getDocHeight( doc ) + 4 + "px";
+    				ifrm.style.visibility = 'visible';
+				}
+
+				document.getElementById('showframe').onload = function() 
+				{ 
+    				setIframeHeight(this.id);
+				}
+			</script>
+		</div>
+		<div class="footer">
+			<p>
+				Copyright &copy; 2018 NS COMMUNICATION | All Right Reserved. 2018<br>
+				Tel : +94 755 848 347<br>
+				Email : <a href="mailto:sinhalalanthaya@gmail.com">sinhalalanthaya@gmail.com</a>  
+			</p>
+		</div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-color: antiquewhite;
+}
+table
+{
+	width: 100%;
+}
+td
+{
+	width: 30%;
+	padding: 0 5%;
+}
+p
+{
+	background-color: #5B0A2F;
+	width: 100%;
+	text-align: center;
+	font-weight: 800;
+	color: white;
+}
+img
+{
+	width: 100%;
+}
+del
+{
+	color: silver;
+}
+ins
+{
+	text-decoration: none;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+h2
+{
+	text-align: center;
+	padding-top: 1%;
+	
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
